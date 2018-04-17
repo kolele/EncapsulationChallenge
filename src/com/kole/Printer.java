@@ -16,7 +16,8 @@ public class Printer {
 
     public int addToner(int amount){
         if ((this.tonerLevel + amount) < 101 ){
-            System.out.println("Toner filled. Current toner level is " + getTonerLevel());
+            this.tonerLevel += amount;
+            System.out.println("Toner filled. Current toner level is " + this.tonerLevel);
         } else {
             System.out.println("Current toner level is " + getTonerLevel() + " try filling less");
         } return getTonerLevel();

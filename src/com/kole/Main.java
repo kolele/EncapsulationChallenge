@@ -8,10 +8,12 @@ public class Main {
 
         int amountPrinted = duplexPrinter.print(6);
         System.out.println(amountPrinted);
+        duplexPrinter.addToner(60);
 
         System.out.println("*******************************************************************");
 
         amountPrinted = singleSidePrinter.print(7);
         System.out.println(amountPrinted);
+        singleSidePrinter.addToner(16);
     }
 }
